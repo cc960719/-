@@ -143,7 +143,7 @@ def save_to_excel(picture_dic,save_path):
 	workbook.save(save_path)
 
 def transform_gps(location):
-    parameters = {'coordsys': 'gps', 'locations': location, 'key': '7ec25a9c6716bb26f0d25e9fdfa012b8'}
+    parameters = {'coordsys': 'gps', 'locations': location, 'key': '7ec25a333316bb26f0d25e9fdfa012b8'}
     base = 'http://restapi.amap.com/v3/assistant/coordinate/convert'
     response = requests.get(base, parameters)
     answer = response.json()
@@ -151,7 +151,7 @@ def transform_gps(location):
     return answer['locations']
 
 def get_regeocode(location):
-    parameters = {'location': location, 'key': '4de0ecd3252a5706534160deafcdcafb'}
+    parameters = {'location': location, 'key': '4de0ecd325333306534160deafcdcafb'}
     base = 'http://restapi.amap.com/v3/geocode/regeo'
     response = requests.get(base, parameters)
     answer = response.json()
