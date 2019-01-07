@@ -1,4 +1,4 @@
-import exifread
+import exifread  #读取照片的信息的包
 import json
 import os
 import xlwt
@@ -8,6 +8,7 @@ import requests
 import time
 
 
+# 根据文件夹名，改照片的名字
 def change_photo_name(photo_file_path):
 	for file in os.listdir(photo_file_path):
 		wenjianjia = os.path.join(photo_file_path, file)
