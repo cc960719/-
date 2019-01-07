@@ -1,0 +1,1 @@
+from main_functions import *picture_dic = {}jinwe_path = "南中环经纬度.xls"wenti_path ="南中环问题.xlsx"final_path="南中环照片对应经纬度.xlsx"photo_file_path = "D:\\太原市标志标线项目\\编程\\总程序\\预调研"# change_photo_name(photo_file_path)# save_to_excel(get_picture_dic(photo_file_path),jinwe_path)Merge_data(jinwe_path,wenti_path,final_path)
